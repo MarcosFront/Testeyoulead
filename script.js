@@ -8,20 +8,14 @@ window.onload = function(){
   }, 4000)
 }
 
-
-
-
-
 function validateEmail(){
     var email = document.getElementById('#email');
     var error = document.getElementById('#error-email');
     
     if(!email.checkValidity()){
       error.innerHTML = "Please Enter Valid Email";  
-    }
-     
-  }
-  
+    }     
+  }  
   function resetMsg(){
     var error = document.querySelector('#error-email');
     if (error.innerHTML == "Please Enter Valid Email"){
