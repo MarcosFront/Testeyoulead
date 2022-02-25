@@ -23,6 +23,21 @@ function validateEmail(){
     }
   }
 
+  function validateEmailModal(){
+    var email = document.querySelector('#emailmodal');
+    var error = document.querySelector('#error-emailmodal');
+    
+    if(!email.checkValidity()){
+      error.innerHTML = "Please Enter Valid Email";  
+    }     
+  }  
+  function resetMsgModal(){
+    var error = document.querySelector('#error-emailmodal');
+    if (error.innerHTML == "Please Enter Valid Email"){
+      error.innerHTML = "";
+    }
+  }
+
 const changeimg = document.querySelector('#sayhello')
 
 changeimg.addEventListener("mouseover", function(){

@@ -113,7 +113,7 @@ section{
     text-align: center;
 }
 /* Validate Email */
-#error-email{
+#error-email, #error-emailmodal{
     color: crimson;
     font-size: var(--smal-font-size);
 }
@@ -125,6 +125,16 @@ section{
 #email:focus:invalid{
     box-shadow: none;
 }
+#emailmodal:invalid{
+    border-color: crimson;
+    box-shadow: 0px 0px  3px crimson;
+}
+
+#emailmodal:focus:invalid{
+    box-shadow: none;
+}
+
+
 /* Modal */
 
 
